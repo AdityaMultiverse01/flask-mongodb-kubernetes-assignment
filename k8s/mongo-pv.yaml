@@ -1,0 +1,12 @@
+# Persistent Volume Claim (PVC)
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  # storageClassName: standard # Minikube usually provides a 'standard' class by default
