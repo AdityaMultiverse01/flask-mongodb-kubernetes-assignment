@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        # REPLACE THIS WITH YOUR ACTUAL IMAGE NAME
-        image: iamsushant/flask-k8s-app:v1
+        image: AdityaMultiverse01/flask-k8s-app:v1
         ports:
         - containerPort: 5000
         
